@@ -1,42 +1,94 @@
-body {
+/* RESET DE BASE */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* PORTFOLIO */
 .portfolio {
-  padding: 60px;
+  padding: 100px 8%;
 }
 
+.portfolio h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+/* CARDS */
 .cards {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .card {
-  background: #1e293b;
-  border-radius: 12px;
+  background: #020617;
+  border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
 }
 
 .card img {
   width: 100%;
+  display: block;
+}
+
+/* CARD CONTENT */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card-content span {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.5;
 }
