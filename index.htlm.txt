@@ -2,36 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Animateur 2D/3D</title>
+  <title>Maurice — Animateur 2D / 3D & Designer</title>
+
+  <!-- Style principal -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Animations AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- HERO -->
 <section class="hero">
   <h1 data-aos="fade-up">Maurice</h1>
   <p data-aos="fade-up" data-aos-delay="200">
-    Animateur 2D / 3D • Graphiste
+    Animateur 2D / 3D • Graphiste • Motion Designer
   </p>
 </section>
 
+<!-- PORTFOLIO -->
 <section class="portfolio">
-  <h2 data-aos="fade-right">Mes projets</h2>
+  <h2 data-aos="fade-right">Projets sélectionnés</h2>
 
   <div class="cards">
+
     <div class="card" data-aos="zoom-in">
-      <img src="https://via.placeholder.com/400x250">
-      <h3>Animation 3D – Exemple</h3>
+      <img src="https://via.placeholder.com/600x400" alt="Projet animation 3D">
+      <div class="card-content">
+        <h3>Animation 3D</h3>
+        <span>Cinématique / Produit</span>
+      </div>
     </div>
 
     <div class="card" data-aos="zoom-in" data-aos-delay="150">
-      <img src="https://via.placeholder.com/400x250">
-      <h3>Design graphique – Exemple</h3>
+      <img src="https://via.placeholder.com/600x400" alt="Projet design graphique">
+      <div class="card-content">
+        <h3>Design graphique</h3>
+        <span>Branding / Visuel</span>
+      </div>
     </div>
+
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 — Maurice • Animateur 2D / 3D & Designer</p>
+</footer>
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+
 </body>
 </html>
